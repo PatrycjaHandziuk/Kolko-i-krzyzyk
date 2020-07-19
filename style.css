@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: linen;
+    margin: none;
+}
+
+#opcje{
+    color: linen;
+    text-align: left !important;
+}
+
+.game-name{
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-top: 2vh;
+    color: rgb(226,226,226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+body{
+
+    background-image: url("img/robots.png");
+    font-family: 'Roboto Mono', monospace;
+}
+
+main{
+    text-align: center;
+}
+
+/*SIDE NAV*/
+
+nav{
+    min-height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-left: none;
+    margin-right: none;
+    background-color: #111;
+  
+}
+
+.burger div{
+    width: 45px;
+    height: 6px;
+    background-color:linen;
+    margin: 12px;
+    display: block;
+    cursor: pointer;
+    margin-left: 5vh;
+}
+.empty-burger{
+    min-width: 69px;
+    min-height: 66px;
+    margin-right: 5vh;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 150px;
+    text-align: center;
+    
+
+}
+
+.sidenav a {
+    padding: 40px 8px 8px 28px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: linen;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#win-points{
+    background-color: #666666;
+    height: auto;
+    display: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.input-panel{
+    margin-top: 20vh;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: linen;
+    width: 600px;
+}
+#win-input{
+    font-size: 22px;
+}
+
+#round{
+    color: linen;
+    margin-top: 5vh;
+}
+
+#vs{
+    color: linen;
+    margin-top: 5vh;
+}
+
+#save{
+    font-size: 22px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+#save:hover{
+    background-color: #4CAF50;
+}
+
+input{
+    font-size: 26px;
+    margin: 5px;
+    text-align: center;
+}
+
+input[type=text]:focus {
+    border: 1px solid #555;
+}
+
+.alert{
+    background-color: black;
+}
+
+
+#game{
+
+    display: none;
+}
+.game-container{
+    font-family: 'Walter Turncoat', cursive;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 450px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 3vh;;
+}
+
+.cell{
+
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 150px;
+    padding: 17px;
+    background-color: linen;
+    transition-duration: 0.4s;
+}
+
+.cellA{
+
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: default;
+    line-height: 100px;
+    font-size: 150px;
+    padding: 17px;
+    background-color: linen;
+    transition-duration: 0.4s;
+}
+
+.cell:hover{
+    background-color: lightgrey;
+}
+
+@media screen and (max-width:768px){
+    .empty-burger{
+        display: none;
+    }
+}
+
+#win-panel{
+    display: none;
+    margin-top: 20vh;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 34px;
+    background-color: linen;
+    width: 600px;
+}
+
+#win-save{
+    font-size: 22px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    padding: 2px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+#win-save:hover{
+    background-color: #4CAF50;
+}
+
+#ogrze{
+    background-color: #666666;
+    color: linen;
+    height: auto;
+    display: none;
+    transition: 2s;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.jeszcze{
+    font-size: 20px;
+
+}
+
+.jeszcze:hover{
+    color: red;
+    cursor: pointer;
+}

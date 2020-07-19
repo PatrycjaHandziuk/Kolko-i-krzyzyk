@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet"> 
+    <title>Gra kółko i krzyżyk</title>
+</head>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)"><span class="reset" onclick= "location.reload()">Zresetuj gre</span></a>
+            <a href="javascript:void(0)" onclick= "openWin()">Zmień warunki zwycięstwa</a>
+            <div id="win-points">
+                <form action="win-save" metod="post"></form>
+                <input id="win-input" type="text" title="Po wpisaniu wartości innej niż liczba dodatnia ustawiona zostanie wartość domyślna (5)." placeholder="liczba zwycięstw"><br>
+                <input type="submit" id="win-save" value="ok">
+            </div>
+            <a href="javascript:void(0)" onclick= "openOgrze()">O grze</a>
+            <div id="ogrze">Kółko i krzyżyk <br><br>
+                 Gra strategiczna rozgrywana przez dwóch graczy. Gracze obejmują pola na przemian dążąc do objęcia trzech pól w jednej linii, przy jednoczesnym uniemożliwieniu tego samego przeciwnikowi. Pole może być objęte przez jednego gracza i nie zmienia swego właściciela przez cały przebieg gry.</div>
+          </div>
+
+        <div class="burger" onclick="openNav()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <div><h1 class="game-name">Gra kółko i krzyżyk</h1></div>
+        <div class="empty-burger"></div>
+    </nav>
+
+    <main>
+        <div class="input-panel">
+            <form action="save" metod="post"></form>
+                <text> Gracz 1  </text><input id="nick-1" type="text" placeholder="wprowadź imie"><input id="color-1" type="color" label="wybierz kolor">
+                <br>
+                <text> Gracz 2  </text><input id="nick-2" type="text" placeholder="wprowadź imie"><input id="color-2" type="color" label="wybierz kolor">
+                <br><br>
+                <input type="submit" id="save" value="zapisz">
+        </div>
+        <div id="game">
+            <h2 id="round"></h2>
+            <div class="game-container">
+                <div id="index-1" class="cell"></div>
+                <div id="index-2" class="cell"></div>
+                <div id="index-3" class="cell"></div>
+                <div id="index-4" class="cell"></div>
+                <div id="index-5" class="cell"></div>
+                <div id="index-6" class="cell"></div>
+                <div id="index-7" class="cell"></div>
+                <div id="index-8" class="cell"></div>
+                <div id="index-9" class="cell"></div>
+            </div>
+            <h2 id="vs"> </h2>
+            <div id="win-panel">
+                <div id="win"></div>
+                <span class="jeszcze" onclick= "location.reload()">Jeszcze raz?</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
